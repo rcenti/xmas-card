@@ -26,7 +26,8 @@ function setup() {
 }
 
 function draw() {
-    background(255);
+    image(backgroundImage, width/2, height/2, 600, 600);
+
     rect(0, 500, 600, 100)
     welcomeScreen();
     fill(242, 230, 220);
@@ -41,18 +42,11 @@ function welcomeScreen() {
     textAlign(CENTER, CENTER);
     fill(0);
     
-    if (!clicked) {
-        text("Click to start", width / 2, width - 60);
-    } else {
-        rectangleClicked();
-        text("it was the night before christmas.", width / 2, width - 60);
-    }
+        text(textData[currentText], width / 2, width - 60);
+        rectangleClicked()
+   
+
 }
-
-
-
-
-
 
 function rectangleClicked() {
     const rw = 600;
@@ -70,7 +64,16 @@ function rectangleClicked() {
 }
  
 
-function mousePressed() {
+function mouseClicked() {
     rectangleClicked();
+    currentText = currentText + 1
+    if (currentText >= textData.length){
+        currentText = 0;
 
+    }
+    else if (
+        mouseX <= 400 && mouseX >= 200 &&
+        mouseY >= 200 && mouseY <= 500)
+        currentText = 9;
+        rectangleClicked();
 }

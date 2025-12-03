@@ -1,11 +1,11 @@
-﻿{
-"start" : "click to begin",
-"one" : "it was the night before christmas",
-"two" : "it was dark…",
-"three" : "...and a little bit cold.",
-"four" : "but it was christmas eve, and…",
-"five" : "...nobody was awake",
-"six" : "apart from you.",
+﻿
+click to begin,
+it was the night before christmas,
+ it was dark…,
+ ...and a little bit cold.,
+but it was christmas eve, and…,
+...nobody was awake,
+apart from you.,
 "picture" : "mum loves this picture. Let’s put it right.",
 "lights" : "nobody has decorated yet. Why don't you?",
 "cookies" : "mum put these out a while ago.",
@@ -29,6 +29,4 @@
 "moonmum" : "Oh! Mai, you did it!",
 "moonmum2" : "its beautiful, Mai. Well done. I think Mum loves it too.",
 "moonmum3" : "mum: I think its christmas now, Mai.",
-"goodbye" : "Thank you for playing"
-
-}
+Thank you for playing"
